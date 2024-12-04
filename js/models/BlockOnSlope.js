@@ -39,8 +39,9 @@ Models.BlockOnSlope.prototype.simulate = function (dt, controlFunc)
 
 Models.BlockOnSlope.ode = function (_this, x)
 {
+	return[x[1],(_this.F-1*Math.sin(_this.slope)*_this.g-_this.friction*x[1])*(1/1)];  // m=1
 	//return[x[1],(_this.F-.5*Math.sin(_this.slope)*_this.g-_this.friction*x[1])*(1/.5)];  // m=.5
-	return[x[1],(_this.F-2*Math.sin(_this.slope)*_this.g-_this.friction*x[1])*(1/2)];  // m=2
+	//return[x[1],(_this.F-2*Math.sin(_this.slope)*_this.g-_this.friction*x[1])*(1/2)];  // m=2
 }
 
 
