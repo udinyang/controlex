@@ -1,0 +1,60 @@
+<?xml version="1.1" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+    <title> Example UM Home Page </title>
+    <link rel="stylesheet"
+        href="http://www.umich.edu/~umweb/example/styles.css"
+        type="text/css" />
+
+    <style type="text/css">
+        body {
+        margin-top: 10%;
+        margin-left: 10%;
+        margin-right: 10%;
+
+        background-color: #003366;
+        color: #ffffff;
+
+        font-family: arial, helvetica, sans-serif;
+        font-size: 1.0em;
+        }
+    </style>
+
+    <meta name="ROBOTS" content="NOINDEX" />
+
+    <!--
+        note: this character set ( iso-8859-1 ) is enforced by the web
+        server.  if you would like to use another character set ( such
+        as utf-8 to display Arabic, Chinese, or Tamil for example )
+        please contact webmaster@umich.edu:
+        http://www.umich.edu/~umweb/contact/
+    -->
+    <meta http-equiv="Content-type"
+        content='text/html; charset="iso-8859-1"' />
+    </head>
+ 
+    <body>
+    <p class="date">
+        <!--#config timefmt="%B %d, %Y" -->
+        <!--#echo var="DATE_LOCAL" -->
+    </p>
+
+    <h1>
+        This page is under construction
+    </h1>
+
+    <p>
+        This xhtml file is located in AFS at:
+    </p>
+
+    <p class="code">
+        <!--#echo var="SCRIPT_FILENAME" -->
+    </p>
+
+    <p class="footer">
+        last updated: <!--#echo var="LAST_MODIFIED" --> <br />
+    </p>
+    </body>
+</html>
