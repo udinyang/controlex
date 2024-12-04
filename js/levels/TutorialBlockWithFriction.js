@@ -10,7 +10,7 @@ Levels.TutorialBlockWithFriction = function()
 	this.boilerPlateCode = "function controlFunction(block)\n{\n  // Example: frequency response\n  // Apply a sine wave input force to the block \n \n  return 5*Math.sin(10*block.T);  // input force to block\n}";
 	this.description = "Push the block under the arrow (x=0) and make it stop there. Write a <u>JavaScript</u> function that calculates the horizontal force on the block necessary to achieve this.";
 	//this.model = new Models.BlockOnSlope({g: 0,x: -2,dx: 0,slope: 0,friction: 1});  // S22:b=1, F22:b=1, S23:b=1.25
-	this.model = new Models.BlockOnSlope({g: 0,x: -2,dx: 0,slope: 0,friction: 1.25});  // S22:b=1, F22:b=1, S23:b=1.25
+	this.model = new Models.BlockOnSlope({g: 0,x: -1,dx: 0,slope: 0,friction: 1.25});  // S22:b=1, F22:b=1, S23:b=1.25
 }
 
 
